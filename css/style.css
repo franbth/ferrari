@@ -73,6 +73,14 @@ ul.NavBarList{
     padding: 0 3%;
 }
 
+.NavBar ul li:hover{
+    font-size:210%;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    
+}
+
+
 
 main p{
 
@@ -171,7 +179,6 @@ footer p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-
 }
 
 .GalleryItem{
