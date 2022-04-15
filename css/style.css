@@ -1,9 +1,10 @@
 /* GENERAL */
-
 *{
     padding: 0;
     margin: 0;
 }
+
+/* TEXTOS */
 p{
     margin: 1%;
     font-family: 'Source Code Pro', monospace;
@@ -11,104 +12,10 @@ p{
     color: white;
 }
 
-html, body{
-    background-color: #7f1610;
-    width: 100%;
-    height: 100%;
-
-}
 a{
     text-decoration: none;
     color: inherit;
 }
-
-/* NAVBAR */
-header{
-    background-color: #000000;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #f8f9fa;
-    font-size: 150%;
-    font-weight: 450;
-}
-.navbar-brand img{
-    margin: 10%;
-}
-
-.container-fluid{
-    justify-content: center;
-}
-.nav-link{
-    text-align: center;
-}
-
-
-/* .texto{
-    width: 30%;
-    padding: 50px;
-    border:10px;
-    margin: 100px;
-} */
-/* header{
-    background-color: #000000;
-    display: flex;
-    position: relative;
-} */
-
-/* .NavBar{
-    background-color: #000000;
-    height: 10%;
-    width: 100%;
-    padding: 4%;
-    border: 0px;
-    margin: 1%;
-
-}
-ul.NavBarList{
-    background-color: #070707;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start ;
-    align-items: center;
-    width: 150%;
-    
-}
-.NavBar ul li{
-
-    text-align:center;
-
-    font-family: 'Source Code Pro', monospace;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 170%;
-    font-weight: 900;
-    list-style-type: none;
-    color: white; 
-    
-    padding: 0 3%;
-}
- */
-/* ANIMACION NAVBAR */
-/* .NavBar ul :hover{
-    font-style: italic;
-    transition: 0.3s;
-    transition-timing-function: ease-out;
-    
-}
- */
-
-
-main p{
-
-    font-weight: 600;
-    letter-spacing: 1%;
-    font-size: 120%;
-/*  width: 600px;
-    padding: 20px;
-    margin: 10px; */
-}
-
 
 h2{
     margin: 15px 0px 0px 70px;
@@ -132,7 +39,59 @@ h3{
 }
 
 
+/* PONER FOOTER AL FONDO */
+html, body{
+    background-color: #7f1610;
+    width: 100%;
+    height: 100%;
 
+}
+
+.contenedorprincipal {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+/* NAVBAR */
+header{
+    background-color: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa;
+    font-size: 150%;
+    font-weight: 450;
+}
+.navbar-brand img{
+    margin: 10%;
+}
+
+.container-fluid{
+    justify-content: center;
+}
+.nav-link{
+    text-align: center;
+}
+
+/* MAIN */
+main p{
+
+    font-weight: 600;
+    letter-spacing: 1%;
+    font-size: 120%;
+}
+
+/* FOOTER */
 footer{
     background-color: #000000;
     width: 100%;
@@ -144,13 +103,6 @@ footer{
     align-content: flex-start;
     justify-content: flex-start;
 
-}
-
-article{
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
 }
 
 .SocialNets{
@@ -189,12 +141,7 @@ footer p {
     width: 40%;
 }
 
-
-
-
-
 /* TIENDA */
-
 .FlexGallery{
     display: flex;
     flex-direction: row;
@@ -226,9 +173,7 @@ footer p {
     align-items: center;
 }
 
-
 /* FORMULA 1 */
-
 .grid-container {
     padding: 10px;
     display: grid;
@@ -238,7 +183,6 @@ footer p {
     gap: 30px;
     align-content: center;
 }
-
 
 /* hover */
 .location-listing {
@@ -275,8 +219,6 @@ footer p {
     transition: opacity .5s;
     background: rgba(90,0,10,0.4);
     color: white;
-
-    /* posiciona el texto en el medio*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,15 +232,12 @@ footer p {
     filter: blur(2px);
 }
 
-
 /* MARANELLO */
-
 .Mapa{
     margin: 0px 0px 20px 70px;
 }
 
 /* CONTACTO */
-
 .ContactForm{
     margin: 50px;
 } 
@@ -318,9 +257,7 @@ label {
     margin: 0 1rem 0 0;
 }
 
-
 /* INDEX RESPONSIVE */
-
 @media screen and (max-width: 1250px) {
     ul.NavBarList{
         display:flex;
@@ -331,15 +268,10 @@ label {
     }
     
 
-    header{
-        display: flex;
-        justify-content: center;
-    }
-
-    .NavBar{
+/*     .NavBar{
         padding: 0;
         margin: 0;
-    }
+    } */
 
     .FlexIndex{
         display: flex;
