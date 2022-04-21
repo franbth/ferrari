@@ -1,0 +1,38 @@
+
+.maranellomain{
+    display: flex;
+    flex-direction: column;
+    & h2{
+        margin-left: 5%;
+    }
+    & h3{
+        padding-left: 5%;
+
+        @media screen and (max-width: 992px){
+            padding-right: 5%;
+        }
+    }
+    & &__map{
+        width:70%;
+        padding-left: 5%;
+
+        @media screen and (max-width: 992px){
+            width: 95%;
+        }
+    }
+    & &__form {
+        padding-left: 5%;
+        padding-bottom: 1%;
+        @media screen and (max-width: 992px){
+            padding-right: 5%;
+        }
+
+        & p {
+            margin-left: 0;
+            @media screen and (max-width: 992px){
+                font-size: 1rem;
+            }
+        }
+    }
+}
+

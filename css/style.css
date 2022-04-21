@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 /* TEXTOS */
@@ -233,9 +234,9 @@ footer p {
 }
 
 /* MARANELLO */
-.Mapa{
+/* .Mapa{
     margin: 0px 0px 20px 70px;
-}
+} */
 
 /* CONTACTO */
 .ContactForm{
@@ -258,7 +259,7 @@ label {
 }
 
 /* INDEX RESPONSIVE */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
     ul.NavBarList{
         display:flex;
         flex-direction:column;
@@ -267,11 +268,6 @@ label {
         width: 105%;
     }
     
-
-/*     .NavBar{
-        padding: 0;
-        margin: 0;
-    } */
 
     .FlexIndex{
         display: flex;
@@ -297,3 +293,9 @@ label {
     }
     
 }
+
+/* @media screen and (max-width: 500px) {
+    .SocialNets{
+        flex-direction: column;
+    }
+} */
