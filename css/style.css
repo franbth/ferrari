@@ -18,8 +18,10 @@ a{
     color: inherit;
 }
 
-h2{
-    margin: 15px 0px 0px 70px;
+
+
+h1, h2{
+    margin: 15px 0px 0px 5%;
     font-family: 'Source Code Pro', monospace;
     font-family: 'Work Sans', sans-serif; 
     color: white;

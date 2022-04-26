@@ -1,10 +1,20 @@
 @import "vars";
 
+/* mixin */
+@mixin size ($width){
+    width:$width;
+}
+
 .maranellomain{
     display: flex;
     flex-direction: column;
-    h2{
+    &__titulo{
         margin-left: $padmarg;
+    }
+    h2{
+        /* extend */
+        @extend.maranellomain__titulo;
+        margin-right: $padmarg;
     }
     h3{
         padding-left: $padmarg;
@@ -14,7 +24,7 @@
         }
     }
     &__map{
-        width:70%;
+        @include size(70%); /* mixin */
         padding-left: $padmarg;
 
         @media screen and (max-width: 992px){
@@ -36,4 +46,21 @@
         }
     }
 }
+
+
+
+/* maps */
+$red-social: (
+    tw:#55acee,
+    ig:#C13584,
+    yt: #FF0000,
+);
+
+@each $nombre, $valor in $red-social {
+    .icon__#{$nombre}{
+        color: $valor;
+    }
+    
+}
+
 

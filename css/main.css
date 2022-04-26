@@ -1,3 +1,4 @@
+/* mixin */
 .maranellomain {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,8 +9,13 @@
           flex-direction: column;
 }
 
-.maranellomain h2 {
+.maranellomain__titulo, .maranellomain h2 {
   margin-left: 5%;
+}
+
+.maranellomain h2 {
+  /* extend */
+  margin-right: 5%;
 }
 
 .maranellomain h3 {
@@ -24,6 +30,7 @@
 
 .maranellomain__map {
   width: 70%;
+  /* mixin */
   padding-left: 5%;
 }
 
@@ -52,5 +59,18 @@
   .maranellomain__form p {
     font-size: 1rem;
   }
+}
+
+/* maps */
+.icon__tw {
+  color: #55acee;
+}
+
+.icon__ig {
+  color: #C13584;
+}
+
+.icon__yt {
+  color: #FF0000;
 }
 /*# sourceMappingURL=main.css.map */
