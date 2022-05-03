@@ -187,7 +187,8 @@ html .contenedorprincipal footer p, body .contenedorprincipal footer p {
 }
 
 .MainIndex .FlexIndex p {
-  width: 40%;
+  font-size: 1.7rem;
+  width: 45%;
   padding: 2%;
   margin: 2%;
 }
