@@ -1,0 +1,30 @@
+.MainTienda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .FlexGallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (max-width: 992px){
+            flex-direction: column;
+        }
+        .GalleryItem{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            background-color: #e1e1e1; 
+            width: 20rem;
+            height: 350;
+            margin: 15px;
+            border-radius: 13px;
+            p{
+                color: #000000;
+                font-size: 1.3rem;
+                font-weight: bolder;
+            }
+            }
+        }
+}

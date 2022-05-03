@@ -1,0 +1,48 @@
+$padmarg: 5%;
+
+/* mixin */
+@mixin size ($width){
+    width:$width;
+}
+
+.maranellomain{
+    display: flex;
+    flex-direction: column;
+    &__titulo{
+        margin-left: $padmarg;
+    }
+    h2{
+        /* extend */
+        @extend.maranellomain__titulo;
+        margin-right: $padmarg;
+    }
+    h3{
+        padding-left: $padmarg;
+
+        @media screen and (max-width: 992px){
+            padding-right: $padmarg;
+        }
+    }
+    &__map{
+        @include size(70%); /* mixin */
+        padding-left: $padmarg;
+
+        @media screen and (max-width: 992px){
+            width: 95%;
+        }
+    }
+    &__form {
+        padding-left: $padmarg;
+        padding-bottom: 1%;
+        @media screen and (max-width: 992px){
+            padding-right: $padmarg;
+        }
+
+        p {
+            margin-left: 0;
+            @media screen and (max-width: 992px){
+                font-size: 1rem;
+            }
+        }
+    }
+}

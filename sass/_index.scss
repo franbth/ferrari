@@ -1,0 +1,38 @@
+.MainIndex{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    @media screen and (max-width: 992px){
+        align-content: flex-start;
+    }
+    .FlexIndex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 992px){
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        p{
+            width: 40%;
+            padding: 2%;
+            margin: 2%;
+                @media screen and (max-width: 992px){
+                    width: auto;
+                    font-size: 120%;
+                    align-content: flex-start;
+                }
+            }
+    }
+    img{
+        margin: 4%;
+        border: 3px solid white;
+        border-radius: 13px;
+        width: 40%;
+        @media screen and (max-width: 992px){
+            width: 90%;
+        }
+    }
+}
