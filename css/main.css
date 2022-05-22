@@ -290,6 +290,8 @@ html .contenedorprincipal footer p, body .contenedorprincipal footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 90rem;
+  padding: 5%;
 }
 
 @media screen and (max-width: 992px) {
@@ -298,6 +300,7 @@ html .contenedorprincipal footer p, body .contenedorprincipal footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -315,6 +318,13 @@ html .contenedorprincipal footer p, body .contenedorprincipal footer p {
 
 .ContactForm {
   margin: 50px;
+}
+
+@media screen and (min-width: 993px) {
+  .ContactForm {
+    padding-left: 50px;
+    width: 60%;
+  }
 }
 
 .ContactForm label {

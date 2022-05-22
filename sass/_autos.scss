@@ -4,8 +4,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    max-width: 90rem;
+    padding: 5%;
     @media screen and (max-width: 992px){
         flex-direction: column;
+        max-width: 100%;
     }
     .flexcontainer{
         display: flex;
